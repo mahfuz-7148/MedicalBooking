@@ -1,0 +1,32 @@
+[
+  {
+    "question": "What is useState and how does it work in React?",
+    "answer":
+       "A React Hook that adds state to functional components. Returns a state variable and a function to update it. React re-renders on state change. example: const [count, setCount] = useState(false);",
+      "addedAt": "2025-8-12"
+  },
+  {
+    "question": "What is the purpose of useEffect in React?",
+    "answer": "Handles side effects like data fetching or DOM updates. Runs after render, controlled by a dependency array. example: useEffect(() => { fetchData(); }, [dependency]);",
+
+      "addedAt": "2025-4-12"
+  },
+  {
+    "question": "What is a custom hook in React and when should you use one?",
+    "answer": "A reusable function that uses React Hooks to encapsulate logic. To share logic, reduce duplication, or simplify complex logic. example: function useWindowSize() { const [size, setSize] = useState(window.innerWidth); ... }",
+
+      "addedAt": "2025-7-21"
+  },
+  {
+    "question": "Difference between controlled and uncontrolled components? Which one is better?",
+    "answer": "Form inputs managed by React state. example: <input value={state} onChange={(e) => setState(e.target.value)} Form inputs managed by the DOM, accessed via refs. example: <input ref={inputRef} /> Controlled for dynamic forms and validation; uncontrolled for simple forms or non-React integrations.",
+    "addedAt": "2025-10-12"
+  },
+  {
+    "question": "Tell us something about useFormStatus() (explore and explain)",
+    "answer":
+       "A React 19 Hook that tracks form submission status. Enhances UX by providing form status like pending state. Returns { pending, data, method, action } inside a <form> with an action prop. example: function SubmitButton() { const { pending } = useFormStatus(); return <button disabled={pending}>{pending ? 'Submitting...' : 'Submit'}</button>;",
+
+      "addedAt": "2025-11-12"
+  }
+]
