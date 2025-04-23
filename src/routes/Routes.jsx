@@ -12,6 +12,7 @@ const router = createBrowserRouter([
     {
         path:'/',
         Component:RootLayout,
+        errorElement: <Error />,
         children:[
             {
                 path: '/',
@@ -36,10 +37,6 @@ const router = createBrowserRouter([
                 path: '/doctor/:id',
                 Component: BookingDetails,
                 loader:() => fetch('/fakeData.json')
-            },
-            {
-                path: '*',
-                Component: Error
             }
         ]
     }
