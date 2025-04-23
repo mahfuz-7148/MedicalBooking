@@ -2,6 +2,7 @@ import React from 'react';
 import {Link, useLoaderData, useParams} from "react-router";
 import {addBookings} from "../utils/index.js";
 import ErrorDetails from "../components/ErrorDetails.jsx";
+import button from "daisyui/components/button/index.js";
 
 const BookingDetails = () => {
     const data = useLoaderData()
@@ -13,7 +14,7 @@ const doctorDetail = data.find(doctor => doctor.registrationNumber === id)
     if (! doctorDetail) {
         return <ErrorDetails id={id}/>
     }
-    const {name, education, speciality, designation, workplace, fee, image, registrationNumber} = doctorDetail || {}
+    const {name, education, speciality, designation, workplace, fee, image, registrationNumber, availability} = doctorDetail || {}
     // console.log(single)
 
 
@@ -29,7 +30,7 @@ const doctorDetail = data.find(doctor => doctor.registrationNumber === id)
                 <div className="md:mr-4 ">
                     <img
                         src={image}
-                        className="md:w-80 w-full h-96 rounded-lg "
+                        className="md:w-full w-full h-[450px] rounded-lg "
                     />
                 </div>
 
@@ -58,6 +59,15 @@ const doctorDetail = data.find(doctor => doctor.registrationNumber === id)
                     <p className='mb-5 border-b border-dashed border-[#0F0F0F33]'></p>
                     <p className='mb-5 text-[#0F0F0F99] text-xl flex items-center'><i className="ri-registered-fill text-2xl "></i> <span className='pl-2'>Reg No: {registrationNumber}</span></p>
                     <p className='border-b border-dashed border-[#0F0F0F33]'></p>
+                    
+                    <p className='text-lg font-bold mt-5'>Availability
+                        {
+                            availability.map(available => (
+                                <button className='text-[#FFA000] ml-3 text-lg bg-[#FFA0001A] py-2 px-3 font-semibold rounded-lg md:rounded-full'>{available.day}</button>
+                            ))
+                        }
+                     </p>
+
 
                     <p className="text-xl font-bold text-gray-800 mt-5">
                         Consultation Fee: <span className="text-xl font-bold text-[#176AE5]">Taka {fee} <span className='text-xl font-medium text-[#14141480]'>(incl. Vat)</span> <span className='text-xl font-medium text-[#176AE5]'>Per consultation</span></span>

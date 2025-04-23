@@ -9,7 +9,12 @@
     "registrationNumber": "BD-MC-472193",
     "fee": 1350,
     "designation": "Chief Cardiologist",
-    "workplace": "HeartCare Medical Center"
+    "workplace": "HeartCare Medical Center",
+    "availability": [
+      { "day": "Monday" },
+      { "day": "Wednesday" },
+      { "day": "Friday" }
+    ]
   },
   {
     "id": 2,
@@ -21,7 +26,12 @@
     "registrationNumber": "BD-MC-915827",
     "designation": "Senior Neurologist",
     "workplace": "Brain & Spine Institute",
-    "fee": 1620
+    "fee": 1620,
+    "availability": [
+      { "day": "Tuesday" },
+      { "day": "Thursday" },
+      { "day": "Saturday" }
+    ]
   },
   {
     "id": 3,
@@ -33,7 +43,12 @@
     "designation": "Head of Orthopedic Surgery",
     "workplace": "Bone & Joint Hospital",
     "registrationNumber": "BD-MC-346509",
-    "fee": 1800
+    "fee": 1800,
+    "availability": [
+      { "day": "Monday" },
+      { "day": "Thursday" },
+      { "day": "Friday" }
+    ]
   },
   {
     "id": 4,
@@ -45,7 +60,12 @@
     "designation": "Pediatric Specialist",
     "workplace": "Little Stars Children’s Hospital",
     "registrationNumber": "BD-MC-781234",
-    "fee": 1100
+    "fee": 1100,
+    "availability": [
+      { "day": "Wednesday" },
+      { "day": "Friday" },
+      { "day": "Saturday" }
+    ]
   },
   {
     "id": 5,
@@ -57,7 +77,12 @@
     "designation": "Director of Oncology",
     "workplace": "Cancer Care Institute",
     "registrationNumber": "BD-MC-209876",
-    "fee": 1950
+    "fee": 1950,
+    "availability": [
+      { "day": "Tuesday" },
+      { "day": "Thursday" },
+      { "day": "Friday" }
+    ]
   },
   {
     "id": 6,
@@ -69,7 +94,12 @@
     "registrationNumber": "BD-MC-654321",
     "designation": "Lead Dermatologist",
     "workplace": "Skin Wellness Clinic",
-    "fee": 1280
+    "fee": 1280,
+    "availability": [
+      { "day": "Monday" },
+      { "day": "Wednesday" },
+      { "day": "Saturday" }
+    ]
   },
   {
     "id": 7,
@@ -81,7 +111,12 @@
     "registrationNumber": "BD-MC-128493",
     "designation": "Senior Gastroenterologist",
     "workplace": "Digestive Health Center",
-    "fee": 1490
+    "fee": 1490,
+    "availability": [
+      { "day": "Tuesday" },
+      { "day": "Thursday" },
+      { "day": "Friday" }
+    ]
   },
   {
     "id": 8,
@@ -93,7 +128,12 @@
     "registrationNumber": "BD-MC-573920",
     "designation": "Endocrinology Consultant",
     "workplace": "Hormone Health Clinic",
-    "fee": 1570
+    "fee": 1570,
+    "availability": [
+      { "day": "Monday" },
+      { "day": "Wednesday" },
+      { "day": "Saturday" }
+    ]
   },
   {
     "id": 9,
@@ -105,7 +145,12 @@
     "registrationNumber": "BD-MC-839104",
     "designation": "Chief Urologist",
     "workplace": "Urology Associates",
-    "fee": 1720
+    "fee": 1720,
+    "availability": [
+      { "day": "Tuesday" },
+      { "day": "Friday" },
+      { "day": "Saturday" }
+    ]
   },
   {
     "id": 10,
@@ -117,7 +162,12 @@
     "registrationNumber": "BD-MC-305194",
     "designation": "Head Psychiatrist",
     "workplace": "MindCare Psychiatric Center",
-    "fee": 1190
+    "fee": 1190,
+    "availability": [
+      { "day": "Monday" },
+      { "day": "Thursday" },
+      { "day": "Friday" }
+    ]
   },
   {
     "id": 11,
@@ -129,7 +179,12 @@
     "registrationNumber": "BD-MC-647382",
     "designation": "Senior Pulmonologist",
     "workplace": "Lung Health Institute",
-    "fee": 1430
+    "fee": 1430,
+    "availability": [
+      { "day": "Wednesday" },
+      { "day": "Friday" },
+      { "day": "Saturday" }
+    ]
   },
   {
     "id": 12,
@@ -141,6 +196,11 @@
     "registrationNumber": "BD-MC-291847",
     "designation": "General Surgeon",
     "workplace": "City General Hospital",
-    "fee": 1650
+    "fee": 1650,
+    "availability": [
+      { "day": "Tuesday" },
+      { "day": "Thursday" },
+      { "day": "Saturday" }
+    ]
   }
 ]
