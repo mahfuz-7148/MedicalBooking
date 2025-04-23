@@ -12,11 +12,11 @@ const AppoinmentCard = ({bookingDoctor, setDisplayBooking}) => {
 
                 <div className='flex justify-between items-center space-y-5'>
                     <div>
-                        <h2 className="text-lg font-semibold text-gray-800">{name}</h2>
-                        <p className="text-sm text-gray-600 mt-5">{education}, {speciality}</p>
+                        <h2 className="text-xl font-semibold text-black">{name}</h2>
+                        <p className="text-lg text-gray-600 mt-5">{education}, {speciality}</p>
                     </div>
                     <div>
-                        <p className="text-sm text-gray-600">Appointment Fee: {fee} Taka + Vat</p>
+                        <p className="text-lg text-gray-600">Appointment Fee: {fee} Taka + Vat</p>
                     </div>
                 </div>
 

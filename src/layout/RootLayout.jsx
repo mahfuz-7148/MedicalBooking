@@ -1,23 +1,32 @@
 import React from 'react';
 import Navbar from "../components/Navbar.jsx";
-import {Outlet} from "react-router";
+import { Outlet } from "react-router";
 import Footer from "../pages/Footer.jsx";
 import { useState, useEffect } from "react";
 import { useLocation } from "react-router";
 import { Suspense } from "react";
 
 const RootLayout = () => {
-    const hideFooterRoutes = ['/contact']
-    const [spinner, setspinner] = useState(true);
+    const hideFooterRoutes = ['/contact'];
+    const [spinner, setSpinner] = useState(true);
     const location = useLocation();
 
     useEffect(() => {
-        setspinner(true);
-        const timer = setTimeout(() => setspinner(false), 1000);
+        setSpinner(true);
+        const timer = setTimeout(() => setSpinner(false), 1000);
         return () => clearTimeout(timer);
     }, [location.key]);
+
+    const isNotFoundPage = location.pathname !== '/' &&
+        location.pathname !== '/bookings' &&
+        location.pathname !== '/blogs' &&
+        location.pathname !== '/contact' &&
+        !location.pathname.startsWith('/doctor/');
+
+    const shouldHideFooter = hideFooterRoutes.includes(location.pathname) || isNotFoundPage;
+
     return (
-        <div className='bg-[#EFEFEF]'>
+        <div className='bg-[#EFEFEF] jakarta'>
             <Navbar />
             <div className='min-h-[calc(100vh-433px)]'>
                 <div className='max-w-screen-2xl mx-auto px-8 md:px-1'>
@@ -29,13 +38,12 @@ const RootLayout = () => {
                         </div>
                     ) : (
                         <Suspense>
-                            <Outlet/>
+                            <Outlet />
                         </Suspense>
                     )}
                 </div>
             </div>
-            {!hideFooterRoutes.includes(location.pathname) && <Footer />}
-
+            {!shouldHideFooter && <Footer />}
         </div>
     );
 };

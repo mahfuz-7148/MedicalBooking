@@ -28,9 +28,6 @@ const Appoinment = () => {
                 ))
             }
 
-
-
-
         </div>
     );
 };
