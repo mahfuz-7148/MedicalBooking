@@ -23,11 +23,10 @@ const Countup = () => {
       <div className="mb-20 p-4" ref={ref}>
         <div className="mx-auto max-w-7xl text-center mb-8">
           <h1 className="text-4xl font-bold mb-4">
-            We Provide Best Law Services
+              We Provide Best Medical Services
           </h1>
           <p className="text-gray-500 mt-2 mb-4">
-            Our platform connects you with verified, experienced Lawyers across
-            various specialties — all at your convenience.
+              Our platform seamlessly connects you with verified, experienced doctors across a wide range of specialties — whenever and wherever you need them.
           </p>
         </div>
 

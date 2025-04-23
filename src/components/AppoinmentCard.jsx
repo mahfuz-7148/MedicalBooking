@@ -7,7 +7,7 @@ const AppoinmentCard = ({bookingDoctor, setDisplayBooking}) => {
     const {registrationNumber, name, fee, speciality, education} = bookingDoctor
     return (
         <>
-        <div>
+        <div className='mb-10'>
             <div className="p-5 bg-white rounded-3xl mt-10">
 
                 <div className='flex justify-between items-center space-y-5'>
