@@ -20,13 +20,13 @@ const Footer = () => {
             </aside>
             <nav>
                 <div className="grid grid-flow-col gap-4">
-                    <Link to='https://www.facebook.com/mahfuzur.rahman.shanto.449975'>
+                    <Link to='https://www.facebook.com/mahfuzur.rahman.shanto.449975' target='_blank'>
                         <i className="ri-facebook-circle-fill text-3xl text-blue-500"></i>
                     </Link>
-                    <Link to='https://www.linkedin.com/in/mahfuzur-rahman-shanto/'>
+                    <Link to='https://www.linkedin.com/in/mahfuzur-rahman-shanto/' target='_blank'>
                         <i className="ri-linkedin-box-fill text-3xl text-[#2489BE]"></i>
                     </Link>
-                    <Link to='https://www.youtube.com/@stackprocoder'>
+                    <Link to='https://www.youtube.com/@stackprocoder' target='_blank'>
                         <i className="ri-youtube-fill text-3xl text-red-600"></i>
                     </Link>
 

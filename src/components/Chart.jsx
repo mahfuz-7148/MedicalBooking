@@ -22,7 +22,7 @@ const Chart = ({displayBooking})=>{
     // console.log(displayBooking)
 
     return (
-        <div className='bg-white rounded-4xl p-5 flex justify-center items-center mt-10'>
+        <div className='bg-white rounded-4xl p-5 mx-2 flex justify-center items-center mt-10'>
             <BarChart
                 width={900}
                 height={400}

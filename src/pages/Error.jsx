@@ -3,8 +3,6 @@ import roboterror from '../assets/error-contact.jpg'
 
 const Error = () => {
 
-
-
     return (
         <div className="min-h-[calc(100vh-100px)] flex items-center justify-center">
             <div className="rounded-lg p-8 max-w-2xl text-center">

@@ -29,7 +29,7 @@ const RootLayout = () => {
         <div className='bg-[#EFEFEF] jakarta'>
             <Navbar />
             <div className='min-h-[calc(100vh-433px)]'>
-                <div className='max-w-screen-2xl mx-auto px-8 md:px-1'>
+                <div className='max-w-screen-2xl mx-auto px-2 md:px-1'>
                     {spinner ? (
                         <div className='flex justify-center items-center min-h-[calc(100vh-8rem)]'>
                             <div className="spinner-8 relative w-12 h-12 bg-blue-600 rounded-full animate-spin text-white">
