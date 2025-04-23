@@ -6,13 +6,12 @@ import Contact from "../pages/Contact.jsx";
 import BookingDetails from "../pages/BookingDetails.jsx";
 import Appoinment from "../components/Appoinment.jsx";
 import Error from "../pages/Error.jsx";
-import ErrorDetails from "../components/ErrorDetails.jsx";
+
 
 const router = createBrowserRouter([
     {
         path:'/',
         Component:RootLayout,
-        errorElement: <Error />,
         children:[
             {
                 path: '/',
@@ -40,7 +39,7 @@ const router = createBrowserRouter([
             },
             {
                 path: '*',
-                Component: ErrorDetails
+                Component: Error
             }
         ]
     }
